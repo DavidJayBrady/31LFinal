@@ -1,0 +1,73 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Sun Nov 27 22:57:06 2016
+| Host         : DESKTOP-RR277SV running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file basys3_wrapper_control_sets_placed.rpt
+| Design       : basys3_wrapper
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    11 |
+| Unused register locations in slices containing registers |    11 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              29 |            8 |
+| No           | No                    | Yes                    |               2 |            1 |
+| No           | Yes                   | No                     |               6 |            3 |
+| Yes          | No                    | No                     |             112 |           51 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------+-------------------------------------------+----------------------------------------+------------------+----------------+
+|     Clock Signal    |               Enable Signal               |            Set/Reset Signal            | Slice Load Count | Bel Load Count |
++---------------------+-------------------------------------------+----------------------------------------+------------------+----------------+
+|  clk_divide_reg[17] |                                           | btnR_IBUF                              |                1 |              2 |
+|  processor_clk_BUFG |                                           | processor_31L/counter/count[5]_i_1_n_0 |                3 |              6 |
+|  processor_clk_BUFG | processor_31L/counter/E[0]                |                                        |                8 |             16 |
+|  processor_clk_BUFG | processor_31L/counter/memory_reg[2][0][0] |                                        |                6 |             16 |
+|  processor_clk_BUFG | processor_31L/counter/memory_reg[3][0][0] |                                        |                4 |             16 |
+|  processor_clk_BUFG | processor_31L/counter/memory_reg[4][0][0] |                                        |                8 |             16 |
+|  processor_clk_BUFG | processor_31L/counter/memory_reg[5][0][0] |                                        |                7 |             16 |
+|  processor_clk_BUFG | processor_31L/counter/memory_reg[6][0][0] |                                        |                9 |             16 |
+|  processor_clk_BUFG | processor_31L/counter/memory_reg[7][0][0] |                                        |                9 |             16 |
+|  processor_clk_BUFG | processor_31L/counter/WE2                 |                                        |                4 |             16 |
+|  clk_IBUF_BUFG      |                                           |                                        |                8 |             29 |
++---------------------+-------------------------------------------+----------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                     1 |
+| 6      |                     1 |
+| 16+    |                     9 |
++--------+-----------------------+
+
+

@@ -1,0 +1,865 @@
+
+*** Running vivado
+    with args -log basys3_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source basys3_wrapper.tcl
+
+
+****** Vivado v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source basys3_wrapper.tcl -notrace
+Command: synth_design -top basys3_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1660 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 281.586 ; gain = 71.883
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'basys3_wrapper' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/imports/Final-Project/basys3_wrapper.sv:23]
+INFO: [Synth 8-638] synthesizing module 'processor' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/Processor.sv:3]
+INFO: [Synth 8-638] synthesizing module 'Counter' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/Counter.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'Counter' (1#1) [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/Counter.sv:23]
+INFO: [Synth 8-638] synthesizing module 'InstructionMemory' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:23]
+WARNING: [Synth 8-567] referenced signal 'inst_mem' should be on the sensitivity list [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:41]
+WARNING: [Synth 8-3848] Net inst_mem[63] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[62] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[61] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[60] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[59] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[58] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[57] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[56] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[55] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[54] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[53] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[52] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[51] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[50] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[49] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[48] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[47] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[46] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[45] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[44] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[43] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[42] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[41] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[40] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[39] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[38] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[37] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[36] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[35] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[34] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[33] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[32] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[31] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[30] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[29] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[28] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[27] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[26] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[25] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[24] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[23] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[22] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[21] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[20] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[19] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[18] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[17] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[16] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[15] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[14] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[13] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[12] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[11] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+WARNING: [Synth 8-3848] Net inst_mem[10] in module/entity InstructionMemory does not have driver. [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:28]
+INFO: [Synth 8-256] done synthesizing module 'InstructionMemory' (2#1) [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/InstructionMemory.sv:23]
+INFO: [Synth 8-638] synthesizing module 'Controller' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/Controller.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'Controller' (3#1) [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/Controller.sv:23]
+INFO: [Synth 8-638] synthesizing module 'RegFile' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:23]
+	Parameter memory_width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegFile' (4#1) [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:23]
+INFO: [Synth 8-638] synthesizing module 'SignExtender' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/SignExtender.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'SignExtender' (5#1) [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/SignExtender.sv:23]
+INFO: [Synth 8-638] synthesizing module 'MUX2_1' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/MUX2_1.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX2_1' (6#1) [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/MUX2_1.sv:23]
+INFO: [Synth 8-638] synthesizing module 'ALU32B' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/imports/new/ALU128B.sv:23]
+	Parameter DWIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ALU1B' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/imports/new/ALU1B.sv:23]
+INFO: [Synth 8-638] synthesizing module 'FA1B' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/imports/new/FA1B.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'FA1B' (7#1) [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/imports/new/FA1B.sv:23]
+INFO: [Synth 8-638] synthesizing module 'Logic' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/imports/new/Logic.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'Logic' (8#1) [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/imports/new/Logic.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'ALU1B' (9#1) [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/imports/new/ALU1B.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'ALU32B' (10#1) [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/imports/new/ALU128B.sv:23]
+INFO: [Synth 8-638] synthesizing module 'DataMemory' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/DataMemory.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'DataMemory' (11#1) [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/DataMemory.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'processor' (12#1) [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/Processor.sv:3]
+INFO: [Synth 8-638] synthesizing module 'seg_display' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/imports/Final-Project/seg_display.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'seg_display' (13#1) [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/imports/Final-Project/seg_display.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'basys3_wrapper' (14#1) [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/imports/Final-Project/basys3_wrapper.sv:23]
+WARNING: [Synth 8-3917] design basys3_wrapper has port dp driven by constant 1
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[31]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[30]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[29]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[28]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[27]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[26]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[25]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[24]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[23]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[22]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[21]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[20]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[19]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[18]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[17]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[16]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[15]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[14]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[13]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[12]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[11]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[10]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[9]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[8]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[7]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port address[6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 318.875 ; gain = 109.172
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 318.875 ; gain = 109.172
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/David/Processor/Processor.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/David/Processor/Processor.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/David/Processor/Processor.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/basys3_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/basys3_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 623.098 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 623.098 ; gain = 413.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 623.098 ; gain = 413.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 623.098 ; gain = 413.395
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "MUXsel2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "memory_reg[63]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[62]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[61]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[60]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[53]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[52]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[51]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[50]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[49]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[48]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[47]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[46]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[45]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[44]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[43]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[42]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[41]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[40]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[39]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[38]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[37]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[36]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[35]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[34]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[33]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[32]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "firstCin1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 623.098 ; gain = 413.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 32    
+	   2 Input      1 Bit         XORs := 32    
++---Registers : 
+	               32 Bit    Registers := 64    
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 225   
+	   4 Input      1 Bit        Muxes := 32    
+	   6 Input      1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+Module RegFile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 64    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 64    
+Module MUX2_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module FA1B 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module Logic 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module ALU1B 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 1     
+Module ALU32B 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module processor 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module seg_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design basys3_wrapper has port dp driven by constant 1
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[63][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[62][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[61][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[60][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[59][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[58][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[57][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[56][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[55][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[54][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[53][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[52][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[51][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[50][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[49][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[48][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[47][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[46][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[45][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[44][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[43][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[42][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[41][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[40][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[39][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[38][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[37][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[36][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[35][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[34][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[33][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[32][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[31][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[30][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[29][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[28][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[27][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[26][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[25][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[24][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[23][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[22][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[21][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[20][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[19][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[18][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[17][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[16][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[15][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[14][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[13][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[12][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[11][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[10][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[9][31]' (FDE) to 'processor_31L/regfile/memory_reg[8][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][31] )
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[63][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[62][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[61][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[60][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[59][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[58][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[57][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[56][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[55][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[54][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[53][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[52][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[51][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[50][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[49][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[48][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[47][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[46][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[45][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[44][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[43][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[42][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[41][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[40][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[39][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[38][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[37][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[36][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[35][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[34][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[33][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[32][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[31][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[30][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[29][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[28][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[27][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[26][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[25][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[24][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[23][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[22][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[21][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[20][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/regfile/memory_reg[19][30]' (FDE) to 'processor_31L/regfile/memory_reg[8][30]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (processor_31L/regfile/\memory_reg[8][3] )
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][31]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[31] with 1st driver pin 'processor_31L/regfile/memory_reg[0][31]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[31] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[31] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][30]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[30] with 1st driver pin 'processor_31L/regfile/memory_reg[0][30]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[30] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[30] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][29]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[29] with 1st driver pin 'processor_31L/regfile/memory_reg[0][29]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[29] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[29] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][28]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[28] with 1st driver pin 'processor_31L/regfile/memory_reg[0][28]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[28] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[28] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][27]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[27] with 1st driver pin 'processor_31L/regfile/memory_reg[0][27]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[27] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[27] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][26]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[26] with 1st driver pin 'processor_31L/regfile/memory_reg[0][26]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[26] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[26] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][25]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[25] with 1st driver pin 'processor_31L/regfile/memory_reg[0][25]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[25] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[25] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][24]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[24] with 1st driver pin 'processor_31L/regfile/memory_reg[0][24]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[24] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[24] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][23]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[23] with 1st driver pin 'processor_31L/regfile/memory_reg[0][23]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[23] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[23] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][22]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[22] with 1st driver pin 'processor_31L/regfile/memory_reg[0][22]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[22] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[22] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][21]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[21] with 1st driver pin 'processor_31L/regfile/memory_reg[0][21]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[21] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[21] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][20]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[20] with 1st driver pin 'processor_31L/regfile/memory_reg[0][20]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[20] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[20] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][19]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[19] with 1st driver pin 'processor_31L/regfile/memory_reg[0][19]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[19] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[19] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][18]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[18] with 1st driver pin 'processor_31L/regfile/memory_reg[0][18]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[18] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[18] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][17]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[17] with 1st driver pin 'processor_31L/regfile/memory_reg[0][17]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[17] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[17] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][16]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[16] with 1st driver pin 'processor_31L/regfile/memory_reg[0][16]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[16] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[16] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][15]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[15] with 1st driver pin 'processor_31L/regfile/memory_reg[0][15]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[15] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[15] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][14]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[14] with 1st driver pin 'processor_31L/regfile/memory_reg[0][14]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[14] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[14] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][13]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[13] with 1st driver pin 'processor_31L/regfile/memory_reg[0][13]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[13] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[13] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][12]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[12] with 1st driver pin 'processor_31L/regfile/memory_reg[0][12]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[12] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[12] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][11]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[11] with 1st driver pin 'processor_31L/regfile/memory_reg[0][11]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[11] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[11] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][10]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[10] with 1st driver pin 'processor_31L/regfile/memory_reg[0][10]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[10] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[10] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][9]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[9] with 1st driver pin 'processor_31L/regfile/memory_reg[0][9]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[9] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[9] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][8]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[8] with 1st driver pin 'processor_31L/regfile/memory_reg[0][8]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[8] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[8] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][7]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[7] with 1st driver pin 'processor_31L/regfile/memory_reg[0][7]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[7] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[7] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][6]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[6] with 1st driver pin 'processor_31L/regfile/memory_reg[0][6]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[6] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[6] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][5]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[5] with 1st driver pin 'processor_31L/regfile/memory_reg[0][5]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[5] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[5] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][4]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[4] with 1st driver pin 'processor_31L/regfile/memory_reg[0][4]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[4] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[4] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][3]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[3] with 1st driver pin 'processor_31L/regfile/memory_reg[0][3]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[3] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[3] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][2]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[2] with 1st driver pin 'processor_31L/regfile/memory_reg[0][2]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[2] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[2] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][1]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[1] with 1st driver pin 'processor_31L/regfile/memory_reg[0][1]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[1] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[1] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[0][0]) is unused and will be removed from module RegFile.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[0] with 1st driver pin 'processor_31L/regfile/memory_reg[0][0]/Q' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[0] with 2nd driver pin 'GND' [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[0] is connected to constant driver, other driver is ignored [C:/Users/David/Processor/Processor.srcs/sources_1/imports/sources_1/new/RegFile.sv:36]
+WARNING: [Synth 8-3332] Sequential element (memory_reg[7][31]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[7][30]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[7][29]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[7][28]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[7][27]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[7][26]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[7][25]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[7][24]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[7][23]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[7][22]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[7][21]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[7][20]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[7][19]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[7][18]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[7][17]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[7][16]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[6][31]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[6][30]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[6][29]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[6][28]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[6][27]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[6][26]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[6][25]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[6][24]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[6][23]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[6][22]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[6][21]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[6][20]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[6][19]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[6][18]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[6][17]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[6][16]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[5][31]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[5][30]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[5][29]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[5][28]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[5][27]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[5][26]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[5][25]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[5][24]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[5][23]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[5][22]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[5][21]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[5][20]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[5][19]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[5][18]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[5][17]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[5][16]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[4][31]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[4][30]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[4][29]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[4][28]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[4][27]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[4][26]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[4][25]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[4][24]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[4][23]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[4][22]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[4][21]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[4][20]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[4][19]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[4][18]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[4][17]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[4][16]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[3][31]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[3][30]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[3][29]) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (memory_reg[3][28]) is unused and will be removed from module RegFile.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 623.098 ; gain = 413.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object            | Inference | Size (Depth x Width) | Primitives      | 
++------------+-----------------------+-----------+----------------------+-----------------+
+|processor   | datamemory/memory_reg | Implied   | 64 x 32              | RAM64X1S x 32   | 
++------------+-----------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 623.098 ; gain = 413.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 623.098 ; gain = 413.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 627.664 ; gain = 417.961
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 627.664 ; gain = 417.961
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 627.664 ; gain = 417.961
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 627.664 ; gain = 417.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 627.664 ; gain = 417.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 627.664 ; gain = 417.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 627.664 ; gain = 417.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |     8|
+|3     |LUT1     |    31|
+|4     |LUT2     |    17|
+|5     |LUT3     |    12|
+|6     |LUT4     |    38|
+|7     |LUT5     |    56|
+|8     |LUT6     |   149|
+|9     |MUXF7    |    33|
+|10    |RAM64X1S |    16|
+|11    |FDCE     |     2|
+|12    |FDRE     |   147|
+|13    |IBUF     |     2|
+|14    |OBUF     |    12|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------------+------------------+------+
+|      |Instance           |Module            |Cells |
++------+-------------------+------------------+------+
+|1     |top                |                  |   525|
+|2     |  processor_31L    |processor         |   435|
+|3     |    counter        |Counter           |   172|
+|4     |    datamemory     |DataMemory        |    16|
+|5     |    instructmemory |InstructionMemory |     1|
+|6     |    mux1           |MUX2_1            |    18|
+|7     |    mux2           |MUX2_1_0          |    17|
+|8     |    regfile        |RegFile           |   210|
+|9     |  seg_display0     |seg_display       |     8|
++------+-------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 627.664 ; gain = 417.961
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 96 critical warnings and 207 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 627.664 ; gain = 113.738
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 627.664 ; gain = 417.961
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  RAM64X1S => RAM64X1S (RAMS64E): 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+254 Infos, 183 Warnings, 96 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 627.664 ; gain = 417.961
+INFO: [Common 17-1381] The checkpoint 'C:/Users/David/Processor/Processor.runs/synth_1/basys3_wrapper.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 627.664 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 27 22:56:28 2016...

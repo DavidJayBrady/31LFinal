@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sun Nov 27 22:55:54 2016
+# Process ID: 3044
+# Current directory: C:/Users/David/Processor/Processor.runs/synth_1
+# Command line: vivado.exe -log basys3_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source basys3_wrapper.tcl
+# Log file: C:/Users/David/Processor/Processor.runs/synth_1/basys3_wrapper.vds
+# Journal file: C:/Users/David/Processor/Processor.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source basys3_wrapper.tcl -notrace
